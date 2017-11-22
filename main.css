@@ -1,0 +1,45 @@
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+body {
+  padding-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.jumbotron {
+  background-image: url('images/cover_temp.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron h1 {
+  font-weight: 500;
+}
+
+.jumbotron p {
+  font-weight: 300;
+}

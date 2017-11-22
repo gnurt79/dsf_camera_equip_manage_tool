@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Doremus Camera Equipment Management Tool</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A tool to check in/out camera equipment">
+    <meta name="author" content="Trung Lac">
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body>
+     <!-- Start of Nav -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+       <div class="container">
+         <!-- <a class="navbar-brand order-1 mr-0" href="https://www.doremus.com" target="_blank"> -->
+            <img src="images/Doremus_Logo_White_RGB.svg" class="navbar-brand order-1 mr-0 img-fluid" alt="Responsive image" type="image/svg+xml">
+         <!-- </a> -->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+           <div class="navbar-nav">
+             <a class="nav-item nav-link" href="#home"><i class="fa fa-home mx-1" aria-hidden="true"></i>Home <span class="sr-only">(current)</span></a>
+             <a class="nav-item nav-link" href="#checkout"><i class="fa fa-sign-out mx-1" aria-hidden="true"></i>Check Out</a>
+             <a class="nav-item nav-link" href="#checkin"><i class="fa fa-sign-in mx-1" aria-hidden="true"></i>Check In</a>
+             <a class="nav-item nav-link" href="#login"><i class="fa fa-child mx-1" aria-hidden="true"></i>Log In</a>
+           </div>
+         </div>
+       </div>
+     </nav><!-- /navbar -->
+
+    <!-- Start of Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container text-white text-sm-center mt-5">
+        <h1 class="display-3">Camera Equipment<br>Management Tool</h1>
+        <p class="lead">Your one stop resource for checking out camera equipment</p>
+      </div>
+    </div><!-- /Jumbotron -->
+
+    <!-- Start of Check-Out Equipment -->
+    <div class="container d-none" id="check-out-page">
+      <div class="row">
+        <!-- Start of Card-->
+  			<div class="col-md-6 col-lg-4">
+          <div class="card mb-3 border-primary">
+            <div class="card-header border-secondary" style="width: 100%; text-align: center;">
+              <!-- <img class="card-img-top" src="" alt="Vivianne"> -->
+              <i class="fa fa-camera fa-5x" aria-hidden="true"></i>
+            </div><!-- /.card-header -->
+            <div class="card-body">
+              <h4 class="card-title">Asset Name</h4>
+              <p class="card-text">Asset Description
+                <ul>
+                  <li>Serial Number:
+                  <li>Purchased Date:
+                </ul>
+              </p>
+            </div><!-- /.card-body -->
+            <div class="card-footer border-secondary clearfix">
+              <div class="form-check float-left"><!-- add "disabled" to disable -->
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value=""><!-- add "disabled" to disable -->
+                  Add to Cart
+                </label>
+              </div>
+              <span class="badge badge-pill float-right badge-warning d-none">Unavailable</span>
+              <span class="badge badge-pill float-right badge-success">Available</span>
+            </div><!-- /.card-footer -->
+          </div>
+        </div><!-- End of Card -->
+        <!-- Start of Card-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3 border-primary">
+            <div class="card-header border-secondary" style="width: 100%; text-align: center;">
+              <!-- <img class="card-img-top" src="" alt="Vivianne"> -->
+              <i class="fa fa-camera fa-5x" aria-hidden="true"></i>
+            </div><!-- /.card-header -->
+            <div class="card-body">
+              <h4 class="card-title">Asset Name</h4>
+              <p class="card-text">Asset Description
+                <ul>
+                  <li>Serial Number:
+                  <li>Purchased Date:
+                </ul>
+              </p>
+            </div><!-- /.card-body -->
+            <div class="card-footer border-secondary clearfix">
+              <div class="form-check float-left disabled"><!-- add "disabled" to disable -->
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="" disabled><!-- add "disabled" to disable -->
+                  Add to Cart
+                </label>
+              </div>
+              <span class="badge badge-pill float-right badge-warning">Unavailable</span>
+              <span class="badge badge-pill float-right badge-success d-none">Available</span>
+            </div><!-- /.card-footer -->
+          </div>
+  			</div><!-- End of Card -->
+        <!-- Start of Card-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3 border-primary">
+            <div class="card-header border-secondary" style="width: 100%; text-align: center;">
+              <!-- <img class="card-img-top" src="" alt="Vivianne"> -->
+              <i class="fa fa-camera fa-5x" aria-hidden="true"></i>
+            </div><!-- /.card-header -->
+            <div class="card-body">
+              <h4 class="card-title">Asset Name</h4>
+              <p class="card-text">Asset Description
+                <ul>
+                  <li>Serial Number:
+                  <li>Purchased Date:
+                </ul>
+              </p>
+            </div><!-- /.card-body -->
+            <div class="card-footer border-secondary clearfix">
+              <div class="form-check float-left"><!-- add "disabled" to disable -->
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value=""><!-- add "disabled" to disable -->
+                  Add to Cart
+                </label>
+              </div>
+              <span class="badge badge-pill float-right badge-warning d-none">Unavailable</span>
+              <span class="badge badge-pill float-right badge-success">Available</span>
+            </div><!-- /.card-footer -->
+          </div>
+  			</div><!-- End of Card -->
+      </div><!-- /.row -->
+      <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#check-out-modal">Check Out</button>
+    </div><!-- End of Check Out Equipment -->
+
+    <!-- Start of Check-In Equipment -->
+    <div class="container" id="check-in-page">
+      <div class="row">
+        <!-- Start of Card-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3 border-primary">
+            <div class="card-header border-secondary" style="width: 100%; text-align: center;">
+              <!-- <img class="card-img-top" src="" alt="Vivianne"> -->
+              <i class="fa fa-camera fa-5x" aria-hidden="true"></i>
+            </div><!-- /.card-header -->
+            <div class="card-body">
+              <h4 class="card-title">Asset Name</h4>
+              <p class="card-text">Asset Description
+                <ul>
+                  <li>Serial Number:
+                  <li>Purchased Date:
+                  <li>Checked Out Date:
+                </ul>
+              </p>
+            </div><!-- /.card-body -->
+            <div class="card-footer border-secondary clearfix">
+              <div class="form-check float-left"><!-- add "disabled" to disable -->
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value=""><!-- add "disabled" to disable -->
+                  Check In
+                </label>
+              </div>
+              <span class="badge badge-pill float-right badge-warning d-none">Unavailable</span>
+              <span class="badge badge-pill float-right badge-danger">Overdue</span>
+            </div><!-- /.card-footer -->
+          </div>
+        </div><!-- End of Card -->
+        <!-- Start of Card-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3 border-primary">
+            <div class="card-header border-secondary" style="width: 100%; text-align: center;">
+              <!-- <img class="card-img-top" src="" alt="Vivianne"> -->
+              <i class="fa fa-camera fa-5x" aria-hidden="true"></i>
+            </div><!-- /.card-header -->
+            <div class="card-body">
+              <h4 class="card-title">Asset Name</h4>
+              <p class="card-text">Asset Description
+                <ul>
+                  <li>Serial Number:
+                  <li>Purchased Date:
+                  <li>Checked Out Date:
+                </ul>
+              </p>
+            </div><!-- /.card-body -->
+            <div class="card-footer border-secondary clearfix">
+              <div class="form-check float-left disabled"><!-- add "disabled" to disable -->
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="" disabled><!-- add "disabled" to disable -->
+                  Check In
+                </label>
+              </div>
+              <span class="badge badge-pill float-right badge-warning d-none">Unavailable</span>
+              <span class="badge badge-pill float-right badge-success d-none">Available</span>
+            </div><!-- /.card-footer -->
+          </div>
+        </div><!-- End of Card -->
+        <!-- Start of Card-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3 border-primary">
+            <div class="card-header border-secondary" style="width: 100%; text-align: center;">
+              <!-- <img class="card-img-top" src="" alt="Vivianne"> -->
+              <i class="fa fa-camera fa-5x" aria-hidden="true"></i>
+            </div><!-- /.card-header -->
+            <div class="card-body">
+              <h4 class="card-title">Asset Name</h4>
+              <p class="card-text">Asset Description
+                <ul>
+                  <li>Serial Number:
+                  <li>Purchased Date:
+                  <li>Checked Out Date:
+                </ul>
+              </p>
+            </div><!-- /.card-body -->
+            <div class="card-footer border-secondary clearfix">
+              <div class="form-check float-left"><!-- add "disabled" to disable -->
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value=""><!-- add "disabled" to disable -->
+                  Check In
+                </label>
+              </div>
+              <span class="badge badge-pill float-right badge-warning d-none">Unavailable</span>
+              <span class="badge badge-pill float-right badge-success d-none">Available</span>
+            </div><!-- /.card-footer -->
+          </div>
+        </div><!-- End of Card -->
+      </div><!-- /.row -->
+      <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#check-in-modal">Check In</button>
+    </div><!-- End of Check in Equipment -->
+
+    <!-- Modals -->
+
+    <!-- Start of Check-Out Modal -->
+    <div class="modal fade" id="check-out-modal" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="check-out-modal-label">Check Out Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- registration form -->
+            <form id="needs-validation" novalidate>
+              <h5 class="mb-4">Basic Info</h5>
+              <div class="form-group">
+                <label class="form-control-label" for="name">Name:</label>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" id="validate-name-first" placeholder="First name" required>
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" id="validate-name-last" placeholder="Last name" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="validate-mobile" class="form-control-label" for="email">Mobile phone:</label>
+                <input type="tel" class="form-control" id="validate-mobile" placeholder="Ex: (XXX)XXX-XXXX" required>
+                <div class="invalid-feedback">Please provide a valid phone number.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="role">Job Role:</label>
+                <select class="form-control" id="role">
+                  <option value="full stack js developer">Creative</option>
+                  <option value="front end developer">Account</option>
+                  <option value="back end developer">Producer</option>
+                </select>
+              </div>
+              <h5 class="mb-4">Equipment Cart</h5>
+              <div class="form-group">
+									<ul class="check-out-equipment-list">
+									</ul>
+              </div>
+              <div class="form-group d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary mx-1">Submit</button>
+                <button type="submit" class="btn btn-secondary mx-1">Cancel</button>
+              </div>
+            </form><!-- /.form -->
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of Check-Out Modal -->
+
+    <!-- Start of Check-In Modal -->
+    <div class="modal fade" id="check-in-modal" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="check-in-modal-label ">Check In Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- check-in form -->
+            <form id="needs-validation" novalidate>
+              <h5 class="mb-4">Check In!</h5>
+
+            </form><!-- /.form -->
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of Check-In Modal -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
